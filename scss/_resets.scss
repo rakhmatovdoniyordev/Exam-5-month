@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-last;
+}
+.container{
+    max-width: 1202px;
+    width: 100%;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+.container-lg{
+    max-width: 1337px;
+    width: 100%;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+a{
+    color: inherit;
+    text-decoration: inherit;
+}
+button{
+    border: none;
+    cursor: pointer;
+}
+img{
+    max-width: 100%;
+}
+li{
+    list-style: none;
+}

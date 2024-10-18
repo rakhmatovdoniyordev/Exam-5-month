@@ -1,0 +1,14 @@
+@font-face {
+    font-family: inter;
+    src: url(../fonts/Inter-Regular.ttf);
+}
+@font-face {
+    font-family: poppins;
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+$font-first: inter;
+$font-last: poppins;
+$bg-first: #000;
+$bg-last: #DB4444;
+$color: #fafafa;

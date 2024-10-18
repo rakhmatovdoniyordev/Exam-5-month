@@ -1,0 +1,55 @@
+.register{
+    margin: 60px 0;
+    .register__wrapper{
+        display: flex;
+        .register__img{
+            display: flex;
+            justify-content: flex-end;
+        }
+        .register__info{
+            max-width: 371px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 24px;
+            margin-left: 130px;
+            .form{
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+                h2{
+                    font-family: $font-first;
+                    font-style: 36px;
+                    font-weight: 500;
+                    color: $bg-first;
+                    letter-spacing: 2px;
+                }
+                p{
+                    color: $bg-first;
+                }
+                input{
+                    border: none;
+                    border-bottom: 1px solid #000000;
+                    outline: none;
+                    height: 35px;
+                }
+                .register__btn{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    button{
+                        padding: 16px 48px;
+                        border-radius: 4px;
+                        background: $bg-last;
+                        color: #fff;
+                        font-weight: 500;
+                    }
+                    a{
+                        color: $bg-last;
+                    }
+                }
+            }
+        }
+    }
+}
