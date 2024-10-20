@@ -28,11 +28,14 @@
                 p{
                     color: $bg-first;
                 }
-                input{
+                .register__inp{
                     border: none;
                     border-bottom: 1px solid #000000;
                     outline: none;
                     height: 35px;
+                    &.active{
+                        border-bottom: 2px solid rgb(0, 225, 255);
+                    }
                 }
                 .register__btn{
                     display: flex;
@@ -47,6 +50,37 @@
                     }
                     a{
                         color: $bg-last;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 990px) {
+    .register{
+        .register__wrapper{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .register__img{
+                display: none;
+            }
+            .container{
+                .register__info{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin: 0 auto;
+                    .form{
+                        .register__btn{
+                            button{
+                                padding: 10px 22px;
+                            }
+                            a{
+                                font-size: 14px;
+                            }
+                        }
                     }
                 }
             }

@@ -1,0 +1,415 @@
+.detail__wrapper{
+    margin: 60px 0;
+}
+
+.breadcrumb {
+    margin-bottom: 20px;
+    font-size: 14px;
+
+    &__link {
+        color: #666;
+        text-decoration: none;
+    }
+
+    &__current {
+        font-weight: bold;
+    }
+}
+
+.product {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    &__gallery {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__thumbnails {
+        display: flex;
+        flex-direction: column;
+        max-width: 170px;
+        max-height: 600px;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    &__thumbnail {
+        padding: 30px;
+        object-fit: cover;
+        cursor: pointer;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    &__main-image {
+        max-width: 500px;
+        img {
+            padding: 50px;
+            max-width: 500px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+    }
+
+    &__details {
+        max-width: 400px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    &__title {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    &__rating {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    &__price {
+        font-size: 24px;
+        color: #ff0000;
+        margin-bottom: 20px;
+    }
+
+    &__description {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #757575b4;
+    }
+
+    &__options {
+        margin-bottom: 20px;
+    }
+
+    &__colors, &__sizes {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    &__label {
+        margin-right: 10px;
+        font-size: 20px;
+    }
+
+
+
+    &__size {
+        padding: 5px 10px;
+        margin-right: 10px;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        cursor: pointer;
+        background-color: white;
+
+        &--active {
+            border-color: black;
+            font-weight: bold;
+        }
+    }
+
+    &__quantity {
+        display: inline-block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    &__inp{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #ddd;
+    }
+
+    &__quantity-btn {
+        padding: 12px 18px;
+        cursor: pointer;
+        background-color: #f4f4f4;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        transition: .4s;
+        &:hover{
+            background: $bg-last;
+            color: white;
+        }
+    }
+
+    &__quantity-input {
+        max-width: 40px;
+        height: 100%;
+        text-align: center;
+        border: 1px solid #ddd;
+        margin: 0 5px;
+        border: none;
+        outline: none;
+    }
+
+    &__buy-now {
+        width: 100%;
+        padding: 10px;
+        background-color: #e74c3c;
+        color: white;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    &__like{
+        padding: 12px;
+        background: #ddd;
+        border-radius: 4px;
+    }
+
+    &__delivery-info {
+        font-size: 14px;
+    }
+
+    &__delivery, &__return {
+        font-weight: bold;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        img{
+            max-width: 40px;
+            max-height: 40px;
+        }
+        p{
+            display: flex;
+            flex-direction: column;
+            font-weight: 400;
+        }
+        span{
+            font-weight: 700;
+        }
+    }
+
+    &__delivery-text, &__return-text {
+        margin: 5px 0;
+    }
+
+    &__link {
+        color: #3498db;
+        text-decoration: none;
+    }
+}
+
+
+@media (max-width: 1090px) {
+    .product {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__gallery {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        &__thumbnails {
+            flex-direction: row;
+            max-width: 100px;
+            height: auto;
+        }
+        &__main-image {
+            max-width: 500px;
+            img {
+                max-width: 300px;
+                border-radius: 5px;
+                border: 1px solid #ddd;
+            }
+        }
+    }
+}
+
+.product__chekbox{
+       display: flex;
+       border: none;
+       margin-top: 30px;
+       flex-direction: row;
+      .checkbox-wrapper-63{
+        border: none;
+        margin-left: 20px;
+      }
+}
+
+.checkbox-wrapper-63 input[type="checkbox"] {
+              visibility: hidden;
+              display: none;
+            }
+
+            .checkbox-wrapper-63 *,
+            .checkbox-wrapper-63 ::after,
+            .checkbox-wrapper-63 ::before {
+              box-sizing: border-box;
+            }
+
+            .checkbox-wrapper-63 .switch {
+              font-size: 1rem;
+              position: relative;
+              display: inline-block;
+              width: 4em;
+              height: 2em;
+            }
+
+            .checkbox-wrapper-63 .slider {
+              position: absolute;
+              cursor: pointer;
+              inset: 0;
+              background-color: #eee;
+              transition: 0.4s;
+              border-radius: 0.5em;
+              box-shadow: 0 0.2em #dfd9d9;
+            }
+
+            .checkbox-wrapper-63 .slider:before {
+              position: absolute;
+              content: "";
+              height: 1.5em;
+              width: 1.4em;
+              border-radius: 0.3em;
+              left: 0.3em;
+              bottom: 0.7em;
+              background-color: lightsalmon;
+              transition: 0.4s;
+              box-shadow: 0 0.4em #bcb4b4;
+            }
+
+            .checkbox-wrapper-63 .slider:hover::before {
+              box-shadow: 0 0.2em #bcb4b4;
+              bottom: 0.5em;
+            }
+
+            .checkbox-wrapper-63 input:checked + .slider::before {
+              transform: translateX(2em);
+              background: lightgreen;
+            }
+
+.clear {
+  clear: both;
+}
+
+.checkBox {
+  display: block;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 0px 0px 2px #000000;
+}
+
+.checkBox div {
+  width: 60px;
+  height: 60px;
+  background-color: #000000;
+  top: -52px;
+  left: -52px;
+  position: absolute;
+  transform: rotateZ(45deg);
+  z-index: 100;
+}
+
+.checkBox input[type=checkbox]:checked + div {
+  left: -10px;
+  top: -10px;
+}
+
+.checkBox input[type=checkbox] {
+  position: absolute;
+  left: 50px;
+  visibility: hidden;
+}
+
+.transition {
+  transition: 300ms ease;
+}
+button {
+ position: relative;
+ border: none;
+ background: transparent;
+ padding: 0;
+ cursor: pointer;
+ outline-offset: 4px;
+ transition: filter 250ms;
+ user-select: none;
+ touch-action: manipulation;
+}
+
+.shadow {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 60%;
+ height: 60%;
+ border-radius: 12px;
+ background: hsl(0deg 0% 0% / 0.25);
+ will-change: transform;
+ transform: translateY(2px);
+ transition: transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+
+
+
+.front {
+ display: block;
+ position: relative;
+ padding: 10px 12px;
+ border-radius: 12px;
+ font-size: 1.1rem;
+ color: white;
+ background: hsl(345deg 100% 47%);
+ will-change: transform;
+ transform: translateY(-4px);
+ transition: transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+
+button:hover {
+ filter: brightness(110%);
+}
+
+button:hover .front {
+ transform: translateY(-6px);
+ transition: transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+button:active .front {
+ transform: translateY(-2px);
+ transition: transform 34ms;
+}
+
+button:hover .shadow {
+ transform: translateY(4px);
+ transition: transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+button:active .shadow {
+ transform: translateY(1px);
+ transition: transform 34ms;
+}
+
+button:focus:not(:focus-visible) {
+ outline: none;
+}
+
+
+.fa-star{
+    color: #ffbc04;
+}
